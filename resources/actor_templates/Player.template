@@ -1,0 +1,35 @@
+{
+	"name": "player",
+	"components": {
+		"1" : {
+			"type": "Rigidbody",
+			"collider_type": "box",
+			"width" : 0.9,
+			"radius": 0.45,
+			"density": 0.5,
+			"lock_rotation": true,
+			"trigger_radius": 0.55
+		},
+		"2": {
+			"type": "KeyboardControls"
+		},
+		"3": {
+			"type": "SpriteRenderer",
+			"sprite": "stayright"
+		},
+		"4": {
+			"type": "Animator",
+			"sprite_prefix": "walkright",
+			"frame_count": 2,
+			"frame_duration": 8,
+			"loop": true
+		},
+		"5": {
+			"type": "Animator",
+			"sprite_prefix": "walkleft",
+			"frame_count": 2,
+			"frame_duration": 8,
+			"loop": true
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "name": "ProjectileA",
+    "components": {
+        "1": {
+            "type": "ProjectileA"
+        },
+        "2": {
+            "type": "Transform"
+        },
+        "3": {
+            "type": "ConstantMovement",
+            "x_vel": 15
+        },
+        "4": {
+            "type": "SpriteRenderer",
+            "sprite": "circle"
+        }
+    }
+}

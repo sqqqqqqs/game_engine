@@ -1,0 +1,52 @@
+{
+	"actors": [
+		{
+			"name": "PlayerA",
+			"components": {
+				"1": {
+					"type": "Transform",
+					"x": 100,
+					"y": 100
+				},
+				"2":{
+					"type": "Network",
+					"is_server": true,
+					"send_mode": true,
+					"port": 12345
+				},
+				"3":{
+					"type": "SpriteRenderer",
+					"sprite": "stayright"
+				},
+				"4":{
+					"type": "KeyboardControl"
+				},
+				"5":{
+					"type": "PlayerA"
+				}
+			}
+		},
+		{
+			"name": "PlayerB",
+			"components": {
+				"1": {
+					"type": "Transform",
+					"x": 700,
+					"y": 100
+				},
+				"2":{
+					"type": "Network",
+					"is_server": false,
+					"send_mode": false,
+					"server_ip": "127.0.0.1",
+					"port": 23456,
+					"target_actor_key": "PlayerB"
+				},
+				"3":{
+					"type": "SpriteRenderer",
+					"sprite": "stayleft"
+				}
+			}
+		}
+	]
+}
